@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basic Vue Js - HelloWorld App</title>
+
+  <!-- https://google.github.io/material-design-icons/#icon-font-for-the-web -->
+  <!-- Using via Google Web Fonts -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  <!-- https://tailwindcss.com/docs/installation -->
+  <!-- Using Tailwind via CDN -->
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+
+  <!-- https://v3.vuejs.org/guide/installation.html#release-notes -->
+  <!-- Vue CDN -->
+  <script src="https://unpkg.com/vue@next"></script>
+
+  <style>
+  </style>
+
+</head>
+
+<body>
+
+  <div id="app" class="m-0 ">
+    <div id="alert" class="h-10 bg-yellow-500 mx-auto ">
+      <p class="pt-3 text-center font-sans text-xs hover:underline">อิเกียพร้อมให้คุณช้อปได้อย่างปลอดภัย สะดวกสบาย และมั่นใจ
+        คลิกเพื่ออ่านเพิ่มเติมเกี่ยวกับมาตรการป้องกันของเรา 
+        <!-- <div class="material-icons p-1 float-right hover:bg-yellow-100 bg-opacity-5 rounded-full items-start">keyboard_arrow_down</div> -->
+      </p>
+    </div>
+
+    <div class="h-20 m-0 pt-3 flex-1 pl-18 p-6" id="navbar">
+      <span class="material-icons p-3 pt-6 float-left hover:bg-gray-100 rounded-full ">toc</span>
+      <img src=" https://download.logo.wine/logo/IKEA/IKEA-Logo.wine.png " class="float-left w-32 h-20 ml-8 mr-10 p-0">
+      <div id="search-bar" class="relative pt-3">
+        <input type="text" id="search-box"
+          class="rounded-3xl bg-gray-100 w-8/12 h-14 float-left m-0 pl-20 hover:bg-gray-200 mr-12"
+          placeholder="คุณกำลังหาอะไรอยู่">
+        <img src="images/search-512.png" class="absolute left-72 top-7 w-6 h-6 " alt="search">
+        <img src="images/721274-200.png" class="absolute right-80 top-6 w-8 h-8 hover:bg-gray-300 rounded-full "alt="camera">
+      </div>
+
+      <div class="flex-1 justify-between pt-2 m-0">
+        <span class=></span>
+        <span class="material-icons hover:bg-gray-200 rounded-full p-3">local_shipping</span>
+        <span class="material-icons hover:bg-gray-200 rounded-full p-3">perm_identity</span>
+        <span class="material-icons hover:bg-gray-200 rounded-full p-3">favorite</span>
+        <span class="material-icons hover:bg-gray-200 rounded-full p-3">shopping_basket</span>
+      </div>
+    </div>
+
+    <div id="content" class="">
+      <img src="images/newdelivery_sitewide.jpg" class="pt-8 pl-28 w-11/12 " id="banner">
+
+      <div id="under-banner" class="flex-1 space-x-1 pl-28 pt-5 ">
+        <p class="font-sans text-xs inline hover:underline ">หน้าแรก</p>
+        <span class="material-icons inline text-sm ">navigate_next</span>
+        <p class="font-sans text-xs inline hover:underline">แคมเปญ</p>
+        <span class="material-icons inline text-sm">navigate_next</span>
+        <p class="font-sans text-xs text-gray-700 inline">วิธีการเล็ก ๆ น้อย ๆ เพื่อบ้านที่ดีขึ้น</p>
+        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"></div>
+        
+      </div>
+      
+
+      <div class="w-10/12 h-14 ml-28 mr-16 mt-3 pt-16 pr-40 ">
+        <h1 class="text-3xl font-serif font-black ">วิธีการเล็ก ๆ น้อย ๆ เพื่อบ้านที่ดีขึ้น</h1>
+        <div class="pt-5 pr-96 text-gray-700 leading-7">
+          <b>ความสุนทรีในราคาเอื้อมถึง </b>ให้ชีวิตในบ้านสดใสขึ้นในเทศกาลนี้ด้วยของตกแต่งที่สวย สดใส และสะดุดตา
+          ของตกแต่งบ้านแต่ละชุดคัดสรรด้วยมือ ซึ่งไม่เพียงลดความเครียดจากการชอปปิ้งเท่านั้น แต่ยังทำให้การให้ความบันเทิง
+          การตกแต่ง และการฉลองประหยัดยิ่งขึ้นด้วย
+        </div>
+        
+          <img src="images/ezgif-7-09a132932352.jpg" alt="pic" class="pt-5 max-w-screen-2xl">
+          <h1 class="text-3xl font-serif font-black pt-16">ค้นหาตามหมวดหมู่: </h1>
+      </div>
+
+    </div>
+
+    <div id="content">
+      
+    </div>
+
+
+  </div>
+  <!-- my main.js -->
+  <script src="./main.js"></script>
+</body>
+
+</html>
