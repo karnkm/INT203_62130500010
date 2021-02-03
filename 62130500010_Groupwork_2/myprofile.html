@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basic Vue Js - HelloWorld App</title>
+
+  <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css' rel="stylesheet">
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel="stylesheet">
+  <!-- https://v3.vuejs.org/guide/installation.html#release-notes -->
+  <!-- Vue CDN -->
+  <script src="https://unpkg.com/vue@next"></script>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
+
+body {
+    background-color: #c9ecd2;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300
+}
+
+.container {
+    height: 100vh
+}
+
+.card {
+    width: 380px;
+    border: none;
+    border-radius: 15px;
+    padding: 8px;
+    background-color: #fff;
+    position: relative;
+    height: 370px
+}
+
+.upper {
+    height: 100px
+}
+
+.upper img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+
+.user {
+    position: relative
+}
+
+.profile img {
+    height: 80px;
+    width: 80px;
+    margin-top: 2px
+}
+
+.profile {
+    position: absolute;
+    top: -50px;
+    left: 38%;
+    height: 90px;
+    width: 90px;
+    border: 3px solid #fff;
+    border-radius: 50%
+}
+
+.follow {
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 35px
+}
+
+.stats span {
+    font-size: 29px
+}
+
+#name {
+  color: rgb(231, 231, 231);
+}
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <div class="container d-flex justify-content-center align-items-center">
+      <div class="card">
+          <div class="upper"> <img v-bind:src="bg" class="img-fluid "> </div>
+          <div class="user text-center">
+              <div class="profile"> <img v-bind:src="image" class="rounded-circle" width="80"> </div>
+          </div>
+          <div class="mt-5 text-center">
+              <h4 class="mb-0" id="name"> {{firstname }}  {{lastname}}</h4> 
+              <span class="text-muted d-block mb-2">{{province}}</span> 
+              <button class="btn btn-primary btn-sm follow">Follow</button>
+              <div class="d-flex justify-content-between align-items-center mt-4 px-4">
+                  <div class="stats">
+                      <h6 class="mb-0">Followers</h6> <span>{{Followers}}</span>
+                  </div>
+                  <div class="stats">
+                      <h6 class="mb-0">Projects</h6> <span>{{Projects}}</span>
+                  </div>
+                  <div class="stats">
+                      <h6 class="mb-0">Ranks</h6> <span>{{Ranks}}</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+
+  <!-- my main.js -->
+  <script src="./profile.js"></script>
+</body>
+
+</html>
